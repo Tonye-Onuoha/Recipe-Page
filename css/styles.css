@@ -1,0 +1,78 @@
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    height: 1500px;
+    font-size: 16px;
+}
+main {
+    width: 100%;
+    height: 100%;
+    background-color: hsl(30, 54%, 90%);
+    outline: 1px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3,
+h5 {
+    color: hsl(14, 45%, 36%);
+    margin: 0;
+}
+
+p {
+    margin: 0.2em;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    width: 40%;
+    outline: 1px solid #000000;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.image-container {
+    outline: 1px solid red;
+    height: 250px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.preparation-container {
+    padding: 1em;
+    box-sizing: border-box;
+    background-color: hsl(330, 100%, 98%);
+}
+
+.preparation-container > h5 {
+    margin-bottom: 1em;
+}
+
+.preparation-list {
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+}
+
+.preparation-list li:last-child {
+    margin-bottom: 0;
+}
+
+.preparation-list li,
+.ingredients-list li,
+.instructions-list li {
+    margin-bottom: 0.5em;
+}
+
+.ingredients-list {
+    list-style-position: inside;
+    padding: 0;
+}
