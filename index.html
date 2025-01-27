@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
@@ -23,16 +29,16 @@
   </head>
   <body>
     <main>
-      <div class="container">
+      <div class="container outfit-font">
         <div class="image-container">
           <img src="assets/images/image-omelette.jpeg" alt="recipe image" />
         </div>
         <div class="description">
-          <h2>Simple Omelette Recipe</h2>
+          <h1 id="title" class="young-serif-regular">Simple Omelette Recipe</h1>
           <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs</p>
           <p>cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
           <div class="preparation-container">
-            <h5>Preparation time</h5>
+            <b>Preparation time</b>
             <ul class="preparation-list">
               <li>Total: Approximately 10 minutes</li>
               <li>Preparation: 5 minutes</li>
@@ -41,7 +47,7 @@
           </div>
         </div>
         <div class="ingredients">
-          <h3>Ingredients</h3>
+          <h3 class="young-serif-regular">Ingredients</h3>
           <ul class="ingredients-list">
             <li>2-3 large eggs</li>
             <li>Salt, to taste</li>
@@ -50,9 +56,8 @@
             <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
           </ul>
         </div>
-        <hr />
         <div class="instructions">
-          <h3>Instructions</h3>
+          <h3 class="young-serif-regular">Instructions</h3>
           <ol class="instructions-list">
             <li>
               <b>Beat the eggs</b>: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed.
@@ -74,26 +79,25 @@
             <li><b>Enjoy</b>: Serve hot, with additional salt and pepper if needed.</li>
           </ol>
         </div>
-        <hr />
         <div class="nutrition">
-          <h3>Nutrition</h3>
+          <h3 class="young-serif-regular">Nutrition</h3>
           <p>The table below shows nutritional values per serving without the additional fillings.</p>
-          <table class="nutrition-table" border="1">
+          <table class="nutrition-table">
             <tr>
               <td>Calories</td>
-              <td>277kcal</td>
+              <td class="young-serif-regular">277kcal</td>
             </tr>
             <tr>
               <td>Carbs</td>
-              <td>0g</td>
+              <td class="young-serif-regular">0g</td>
             </tr>
             <tr>
               <td>Protein</td>
-              <td>20g</td>
+              <td class="young-serif-regular">20g</td>
             </tr>
             <tr>
               <td>Fat</td>
-              <td>22g</td>
+              <td class="young-serif-regular">22g</td>
             </tr>
           </table>
         </div>

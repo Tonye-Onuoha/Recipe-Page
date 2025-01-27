@@ -2,41 +2,60 @@ html {
     width: 100%;
 }
 
+/* The html represents the viewable section of the page. If you set it to 100%, it takes the entire top viewable section of the page.*/
+
 body {
     width: 100%;
-    height: 1500px;
+    height: 1800px;
+    margin: 0;
     font-size: 16px;
 }
+
+.outfit-font {
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.young-serif-regular {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 main {
     width: 100%;
     height: 100%;
-    background-color: hsl(30, 54%, 90%);
-    outline: 1px solid green;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: hsl(30, 54%, 90%);
+}
+
+h1#title {
+    color: hsl(24, 5%, 18%);
 }
 
 h3,
 h5 {
     color: hsl(14, 45%, 36%);
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0.5em;
 }
 
 p {
-    margin: 0.2em;
+    margin: 0.2em 0;
 }
-
 .container {
     background-color: hsl(0, 0%, 100%);
-    width: 40%;
-    outline: 1px solid #000000;
+    width: 35%;
     padding: 25px;
     box-sizing: border-box;
+    border-radius: 15px;
 }
 
 .image-container {
-    outline: 1px solid red;
     height: 250px;
 }
 
@@ -44,35 +63,83 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 7.5px;
+}
+
+.description {
+    margin-bottom: 2em;
 }
 
 .preparation-container {
-    padding: 1em;
+    padding: 1.5em;
     box-sizing: border-box;
     background-color: hsl(330, 100%, 98%);
+    margin-top: 1.5em;
+    border-radius: 7.5px;
 }
 
-.preparation-container > h5 {
+.preparation-container > b {
+    display: block;
+    color: hsl(332, 51%, 32%);
     margin-bottom: 1em;
 }
 
-.preparation-list {
-    list-style-position: inside;
-    margin: 0;
-    padding: 0;
+.instructions,
+.ingredients {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
 }
 
-.preparation-list li:last-child {
-    margin-bottom: 0;
+.preparation-list,
+.instructions-list,
+.ingredients-list {
+    list-style-position: outside;
+    padding: 0;
+    margin: 0;
 }
 
 .preparation-list li,
 .ingredients-list li,
 .instructions-list li {
-    margin-bottom: 0.5em;
+    margin: 1em;
 }
 
-.ingredients-list {
-    list-style-position: inside;
-    padding: 0;
+.preparation-list li:last-child,
+.ingredients-list li:last-child,
+.instructions-list li:last-child {
+    margin-bottom: 0;
 }
+
+.preparation-list li::marker {
+    color: hsl(332, 51%, 32%);
+}
+
+.ingredients-list li::marker,
+.instructions-list li::marker {
+    color: hsl(14, 45%, 36%);
+}
+
+.nutrition-table {
+    width: 100%;
+    margin-top: 1em;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid lightgray;
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+td {
+    padding: 1em;
+}
+
+td:nth-child(2) {
+    color: hsl(14, 45%, 36%);
+}
+
+/* MEDIA QUERIES */
