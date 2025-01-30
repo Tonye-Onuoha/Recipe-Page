@@ -20,11 +20,11 @@ This is a simple HTML and CSS project in which the main objective is to build ou
 
 ### Screenshot
 
-![Screenshot]()
+![Screenshot](./recipe-page.png)
 
 ### Links
 
-- Live Site URL: [Vercel]()
+- Live Site URL: [Vercel](recipe-page-eight-nu.vercel.app)
 
 ## My process
 
