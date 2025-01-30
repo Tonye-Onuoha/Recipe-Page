@@ -35,8 +35,7 @@ h1#title {
     color: hsl(24, 5%, 18%);
 }
 
-h3,
-h5 {
+h2 {
     color: hsl(14, 45%, 36%);
     margin-top: 0;
     margin-bottom: 0.5em;
@@ -149,7 +148,7 @@ td:nth-child(2) {
 
 @media screen and (min-width: 768px) {
     body {
-        height: 1800px;
+        height: 2000px;
     }
     main {
         height: 100%;
